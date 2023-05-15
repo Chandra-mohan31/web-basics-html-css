@@ -1,0 +1,73 @@
+.demo_div{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 5px solid grey;
+    box-shadow: -5px 5px 5px 5px rgb(127, 120, 120);
+    margin: auto;
+    transition: 1.5s ease;
+
+
+}
+.demo_div:hover{
+    transform: skew(30deg,10deg);
+}
+.text_style{
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.text_wrap_demo > p{
+    width: 120px;
+    word-wrap: break-word;
+    text-align: left;
+    border: 1px solid grey;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+}
+
+
+.demo_div2{
+    width: 200px;
+    height: 200px;
+    color: black;
+    background-image: linear-gradient(to left, red, yellow, green);
+    transition: 1.5s ease;
+}
+.demo_div2:hover{
+    cursor: pointer;
+    transform: rotate(45deg) scale(1.5) translate(200px,-150px);
+}
+.details_container{
+    width: 200px;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-align: left;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: -5px 5px 5px 5px grey;
+    
+}
+
+.details_container > p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: uppercase;
+    line-height: normal;
+    text-shadow: 5px 5px 5px rgb(241, 85, 85);
+    transition: 1.5s ease;
+}
+
+.details_container:hover{
+    transform: matrix(1.3, 0.5, -0.5, 1.5, 50, 50);
+}

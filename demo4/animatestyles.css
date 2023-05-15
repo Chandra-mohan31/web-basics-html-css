@@ -1,0 +1,11 @@
+@keyframes image-rotate{
+    from {
+        transform: rotateX(0);
+    
+    }
+    to{
+        transform: rotateX(360);
+    }
+}
+
+

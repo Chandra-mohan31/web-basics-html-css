@@ -1,0 +1,166 @@
+
+
+body{
+    margin: 0;
+   
+}
+
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: grey;
+height: 10vh;
+width: 100%;
+
+
+/* width: 100%; */
+}
+.navbar > div{
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke;
+    transition: 1.5s ease;
+    margin: 5px;
+}
+
+.navbar > div:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+.burger_menu{
+    display: none;
+}
+
+
+
+
+.burger_menu:hover + .navbar_small{
+    display: block;
+
+}
+.navbar_small {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    margin: 50px;
+    animation: animate-card 5s ease-out 1;
+
+  }
+
+.stats_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.demo_container{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-template-columns: repeat(3,100px);
+    /* grid-template-rows: repeat(3,100px); */
+    background-color: rgb(21, 103, 103);
+    gap: 20px;
+}
+
+
+.container_item{
+  background-color: lightgrey;
+  padding: 10px;
+}
+
+
+
+
+@media  (max-width: 768px) and (orientation: portrait)  {
+    body{
+        
+        display: block;
+        color: whitesmoke;
+        background-color: black;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 5px;
+    }
+    .navbar > div{
+        font-size: 15px;
+        font-weight: bold;
+        color: whitesmoke;
+        transition: 1.5s ease;
+        padding: 5px;
+        width: 100%;
+    }
+    .navbar > div:hover{
+        cursor: pointer;
+        transform: scale(1.02);
+    }
+    body::after{
+        content: "Portrait View";
+    }
+
+    .burger_menu{
+        display: block;
+    }
+
+    .card{
+        color: red;
+    }
+
+    
+      
+      
+      
+      
+      
+      
+      
+  
+}
+
+@media  (max-width: 500px) and (orientation: portrait)  {
+    body{
+        
+        display: block;
+        color: whitesmoke;
+        background-color: rgb(160, 60, 60);
+    }
+    
+
+    
+      
+      
+      
+      
+      
+      
+      
+  
+}
+
+
+/* .box :nth-child(1) { order: 2; }
+.box :nth-child(2) { order: 3; }
+.box :nth-child(3) { order: 1; }
+.box :nth-child(4) { order: 3; }
+.box :nth-child(5) { order: 1; } */

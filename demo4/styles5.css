@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+       padding: 10px;
+    
+    }
+    .navbar > a{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: whitesmoke;
+        transition: 1.5s ease;
+        
+    }
+
+
+    .image_container{
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+        flex-shrink: 0;
+        min-width: 300px;
+        max-width: 300px;
+    }
+
+    .image_container > img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+
+    .images_container{
+        display: flex;
+        flex-direction: row-reverse;
+        column-gap: 50px;
+        overflow-x: scroll;
+        
+        
+      
+    }
+    .image_container:nth-child(1) {
+        order: 15;
+      }
+      
+      .image_container:nth-child(2) {
+        order: 4;
+      }
+      
+      .image_container:nth-child(3) {
+        order: 1;
+      }
+      
+      .image_container:nth-child(4) {
+        order: 2;
+      }
+      
+      
+      .image_container:nth-child(5) {
+        order: 6;
+      }
+      
+      .image_container:nth-child(6) {
+        order: 5;
+      }
+      
+      .image_container:nth-child(7) {
+        order: 7;
+      }
+      
+      .image_container:nth-child(8) {
+        order: 8;
+      }
+      
+      .image_container:nth-child(9) {
+        order: 10;
+      }
+      
+      .image_container:nth-child(10) {
+        order: 9;
+      }
+      
+      .image_container:nth-child(11) {
+        order: 11;
+      }
+      
+      .image_container:nth-child(12) {
+        order: 12;
+      }
+      
+      .image_container:nth-child(13) {
+        order: 13;
+      }
+      
+      .image_container:nth-child(14) {
+        order: 14;
+      }
+      
+      .image_container:nth-child(15) {
+        order: 3;
+      }
+
+    @media screen and (max-width: 768px) {
+        .navbar{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+
+    .card {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      perspective: 1000px; /* set the perspective */
+    }
+    
+    .front, .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden; /* hide the backface of the card */
+    }
+    
+    .front {
+      background-color: #f1c40f;
+      transform: rotateY(0deg); /* set initial rotation */
+      z-index: 2; /* make sure the front is on top */
+    }
+    
+    .back {
+      background-color: #3498db;
+      transform: rotateY(180deg); /* rotate 180 degrees */
+    }
+    
+    .card:hover .front {
+      transform: rotateY(-180deg); /* flip the card on hover */
+    }
+    
+    .card:hover .back {
+      transform: rotateY(0deg); /* flip the card on hover */
+    }
+
+    
+    
+
+ 

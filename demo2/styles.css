@@ -1,0 +1,51 @@
+.container{
+    height: 100px;
+    width: 100px;
+    background-image: radial-gradient(ellipse at top left, red , yellow);
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    animation: color-change 5s linear infinite , rotateXYZ 5s linear infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    
+}
+
+.container:hover{
+    
+}
+
+@keyframes color-change {
+    from {     background-image: radial-gradient(ellipse at top left, red , yellow);
+        color: white; }
+    to {     background-image: radial-gradient(ellipse at top left, rgb(16, 204, 148) , rgb(233, 99, 233));
+        ; color: white; }
+  }
+
+  @keyframes rotateX {
+    from { transform: rotateX(0deg);translate: 100px; }
+    to { transform: rotateX(360deg);translate: 10px;}
+  }
+
+  @keyframes rotateY {
+    from { transform: rotateY(0deg);translate: 100px; }
+    to { transform: rotateY(360deg);translate: 10px;}
+  }
+  @keyframes rotateZ {
+    from { transform: rotateZ(0deg);translate: 100px; }
+    to { transform: rotateZ(360deg);translate: 10px;}
+  }
+
+
+  @keyframes rotateXYZ {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    50% {
+      transform: rotateX(180deg) rotateY(180deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+    }
+  }
+  
+ 

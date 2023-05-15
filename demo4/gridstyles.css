@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+}
+
+
+
+    .image_container{
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+        transition: 1s ease-in-out;
+
+    }
+
+    .image_container > img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+
+    .images_container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr); 
+        row-gap: 20px;
+        column-gap: 20px;       
+    }
+
+
+  .images_container_2{
+    display:grid;
+    grid-template-columns: 1fr 0fr;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+
+  .title{
+    text-align: center;
+    font-weight: bolder;
+  }
+
+
+.image_container:hover{
+    transform: scale(1.2);
+}
+
+.template_area_demo{
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "sidebar content content"
+      "footer footer footer";
+    grid-template-rows: 0.2fr 1fr 0.5fr;
+    grid-template-columns: 1fr 2fr;
+}
+
+.header{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header > img,.footer > img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.footer{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar{
+    color: white;
+    background-color: red;
+
+}
+.sidebar > ul  {
+    list-style: none;
+    font-weight: bold;
+    
+}
+
+.sidebar > ul > li:hover{
+    color: palegreen;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+
+.content{
+    color: black;
+    background-color: grey;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    margin: 50px;
+    animation: animate-card 5s ease-out 1;
+
+  }
+
+.stats_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.animation_images{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    overflow-x: scroll;
+
+ }
+
+.animation_images > div{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    flex-shrink: 0;
+    min-width: 300px;
+    max-width: 300px;
+    position: relative;
+    animation-name: animate-images-scroll;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 0ms;
+}
+
+@keyframes animate-images-scroll {
+    0%{
+        right: 0;
+
+    }
+    20%{
+        right: 25%;
+    }
+   50%{
+    right: 50%;
+   }
+    100%{
+        right: 2200px;
+    }
+}
